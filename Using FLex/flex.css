@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    text-align: center;
+}
+.flexbox{
+    padding-top: 2em;
+    width: 940px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    font-size: 20px;
+    
+}
+
+.flexbox [class*="row-"]{
+    display: flex;
+    flex-flow: row wrap;
+    width: 940px; 
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.flexbox p{
+    border: 1px solid grey;
+}
